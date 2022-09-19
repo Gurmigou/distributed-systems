@@ -1,7 +1,5 @@
 package Lab_2;
 
-import java.io.FileInputStream;
-import java.io.InputStream;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
