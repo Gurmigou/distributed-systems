@@ -1,5 +1,7 @@
 package Lab_4.Task_B;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Main {
@@ -17,7 +19,9 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
+        new PrintWriter(FILE_LOG_NAME).close();
+
         PlantState[][] garden = createGarden();
         ConsoleLoggerThread consoleLoggerThread = new ConsoleLoggerThread(garden);
         FileLoggerThread fileLoggerThread = new FileLoggerThread(garden);
