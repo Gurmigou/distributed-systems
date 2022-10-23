@@ -1,10 +1,10 @@
 package Module_1;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 import java.util.Random;
-import java.util.concurrent.*;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingDeque;
 
 public class Task {
     public static final BlockingQueue<Customer> WAITING_CUSTOMERS = new LinkedBlockingDeque<>();
