@@ -1,4 +1,4 @@
-package main
+package Main
 
 import (
 	"math/rand"
@@ -151,7 +151,7 @@ func dfsHelper(adjList [][]City, cityState []City, cur *City, dest *City, visite
 	return -1
 }
 
-func main() {
+func Main() {
 	var RWLock sync.RWMutex
 
 	adjList := [][]City{

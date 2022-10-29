@@ -1,4 +1,4 @@
-package main
+package Main
 
 import (
 	"math/rand"
@@ -100,7 +100,7 @@ func createRandomTableItems() Table {
 	return table
 }
 
-func main() {
+func Main() {
 	smokerSemap1 := make(Semaphore, 1)
 	smokerSemap2 := make(Semaphore, 1)
 	smokerSemap3 := make(Semaphore, 1)

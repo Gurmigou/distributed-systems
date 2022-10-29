@@ -10,7 +10,7 @@ public class Main {
         SecureRandom random = new SecureRandom();
         long start;
         long end;
-        System.out.println("N\t\tSIMPLE\t\tTAPE(2)\t\tTAPE(4)\t\tFOX(2)\t\tFOX(4)\t\tCANNON(2)\tCANNON(4)");
+        System.out.println("N\t\tSIMPLE\t\tTAPE(1)\t\tTAPE(2)\t\tTAPE(4)\t\tFOX(2)\t\tFOX(4)\t\tCANNON(2)\tCANNON(4)");
         for (int size : SIZES) {
             int[][] a = new int[size][size];
             int[][] b = new int[size][size];

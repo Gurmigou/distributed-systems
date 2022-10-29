@@ -1,4 +1,4 @@
-package main
+package Main
 
 import (
 	"math"
@@ -33,7 +33,7 @@ func createEnergyChain(size int) chan int {
 	return energy
 }
 
-func main() {
+func Main() {
 	// size must be a power of 2
 	const size = 8
 	energy := createEnergyChain(size)

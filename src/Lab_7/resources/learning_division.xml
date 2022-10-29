@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<learning_division>
+    <group id="1" name="IPS-31">
+        <student first_name="Kirill" id="1" last_name="Zakharenko"/>
+        <student first_name="Polina" id="2" last_name="Bondarevska"/>
+        <student first_name="Sasha" id="5" last_name="Anikanov"/>
+    </group>
+</learning_division>

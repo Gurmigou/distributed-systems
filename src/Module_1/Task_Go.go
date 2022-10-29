@@ -1,4 +1,4 @@
-package main
+package Main
 
 import (
 	"container/list"
@@ -78,7 +78,7 @@ func handleCustomer(operator int, clientsQueue *list.List, lock *sync.Mutex) {
 
 var wg sync.WaitGroup
 
-func main() {
+func Main() {
 	var clientsQueue = list.New()
 	var lock sync.Mutex
 

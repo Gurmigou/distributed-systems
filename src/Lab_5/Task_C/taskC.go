@@ -1,4 +1,4 @@
-package main
+package Main
 
 import (
 	"fmt"
@@ -104,7 +104,7 @@ func checkAllEqual(array []int) bool {
 	return true
 }
 
-func main() {
+func Main() {
 	const (
 		N       = 3
 		ArrSize = 10
