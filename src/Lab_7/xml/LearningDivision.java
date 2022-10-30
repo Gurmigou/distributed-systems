@@ -25,6 +25,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class LearningDivision {
     private final String ROOT_TAG = "learning_division";
@@ -53,7 +54,7 @@ public class LearningDivision {
             root.appendChild(groupElem);
 
             for (Student student : students) {
-                if (student.group.id == group.id) {
+                if (Objects.equals(student.group.id, group.id)) {
                     Element studentElem = doc.createElement(STUDENT_TAG);
                     studentElem.setAttribute(STUDENT_ID_TAG, String.valueOf(student.id));
                     studentElem.setAttribute(STUDENT_FNAME_TAG, student.first_name);
@@ -212,7 +213,7 @@ public class LearningDivision {
         for (Group group : groups) {
             System.out.println(" - " + group);
             for (Student student : students) {
-                if (student.group.id == group.id)
+                if (Objects.equals(student.group.id, group.id))
                     System.out.println(" - - " + student);
             }
         }
