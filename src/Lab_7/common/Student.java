@@ -1,6 +1,8 @@
 package Lab_7.common;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student implements Serializable {
     public int id;
     public String first_name;
     public String last_name;

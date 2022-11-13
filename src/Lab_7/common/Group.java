@@ -1,6 +1,8 @@
 package Lab_7.common;
 
-public class Group {
+import java.io.Serializable;
+
+public class Group implements Serializable {
     public String name;
     public Integer id;
 
