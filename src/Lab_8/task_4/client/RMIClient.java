@@ -34,9 +34,9 @@ public class RMIClient {
 
             Integer operation = null;
             Scanner scanner = new Scanner(System.in);
+            System.out.println(commands);
 
             while (operation == null || operation != 11) {
-                System.out.println(commands);
                 System.out.println("Input operation:");
                 operation = Integer.parseInt(scanner.next());
 
